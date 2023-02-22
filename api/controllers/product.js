@@ -17,7 +17,7 @@ exports.product_get_all = (req, res, next) => {
             ...doc._doc,
             request: {
               type: "GET",
-              url: "https://rest-api-simle-online-store.onrender.com/products/" + doc._id,
+              url: "https://rest-api-online-shop.onrender.com/products/" + doc._id,
             },
           };
         }),
@@ -55,7 +55,7 @@ exports.product_create_product = (req, res, next) => {
           ...result._doc,
           request: {
             type: "GET",
-            url: "https://rest-api-simle-online-store.onrender.com/products/" + result._id,
+            url: "https://rest-api-online-shop.onrender.com/products/" + result._id,
           },
         },
       });
@@ -130,7 +130,7 @@ exports.product_update_product = (req, res, next) => {
             message: "Updated product successfully",
             request: {
               tyep: "GET",
-              url: "https://rest-api-simle-online-store.onrender.com/products/" + id,
+              url: "https://rest-api-online-shop.onrender.com/products/" + id,
             },
           });
         })
