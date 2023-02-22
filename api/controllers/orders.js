@@ -15,7 +15,7 @@ exports.order_get_all = (req, res, next) => {
             ...doc._doc,
             request: {
               type: "GET",
-              url: "http://localhost:3000/orders/" + doc._id,
+              url: "https://rest-api-simle-online-store.onrender.com/orders/" + doc._id,
             },
           };
         }),
@@ -55,7 +55,7 @@ exports.orders_create_order = (req, res, next) => {
               ...result._doc,
               request: {
                 type: "GET",
-                url: "http://localhost:3000/orders/" + result._id,
+                url: "https://rest-api-simle-online-store.onrender.com/orders/" + result._id,
               },
             },
           });
@@ -85,7 +85,7 @@ exports.orders_get_single_order = (req, res, next) => {
         order: order,
         request: {
           type: "GET",
-          url: "http://localhost:3000/orders",
+          url: "https://rest-api-simle-online-store.onrender.com/orders",
         },
       });
     })
